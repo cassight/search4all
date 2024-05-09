@@ -11,7 +11,7 @@ export default function Home() {
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
 
   const handlePasswordSubmit = () => {
-    if (password === process.env.password) {
+    if (password === process.env.PAGE_PASSWORD) {
       setIsPasswordCorrect(true);
     } else {
       alert("Incorrect password. Please try again.");
